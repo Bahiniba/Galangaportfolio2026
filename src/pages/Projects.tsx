@@ -6,12 +6,14 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Menu from '../components/Menu';
 import { projectsList } from '../data/projects';
 import imgProfile from "../assets/imgProfile.jpeg";
+import { useIsMobile } from '../components/ui/use-mobile';
 
 export default function Projects() {
   const navigate = useNavigate();
   const { theme } = useTheme();
   const { t } = useLanguage();
   const [currentTime, setCurrentTime] = useState(new Date());
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -43,7 +45,7 @@ export default function Projects() {
               ? 'radial-gradient(circle at 50% 50%, rgba(38,38,38,1) 0%, rgba(26,26,26,1) 100%)'
               : 'radial-gradient(circle at 50% 50%, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%)'
           }}
-        />
+        ></div>
       </div>
 
       {/* Main container */}
@@ -56,7 +58,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
         >
           {/* Profile */}
-          <div className="flex items-center gap-4 cursor-pointer" onClick={() => navigate('/')}>
+          <div className="flex items-center gap-4 cursor-pointer" onClick={() => navigate('/')}> 
             <div className="w-12 h-12 rounded-full overflow-hidden bg-[#bffffd]">
               <img src={imgProfile} alt="Confort Technologie" className="w-full h-full object-cover" />
             </div>
@@ -173,15 +175,14 @@ export default function Projects() {
                     alt={project.title} 
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent transition-opacity duration-300 ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}></div>
+                  <div className={`absolute bottom-4 left-4 transition-opacity duration-300 ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                     <h3 className="font-['Azeret_Mono'] text-xl text-white mb-1">{project.title}</h3>
                     <p className="font-['Azeret_Mono'] text-sm text-[#b3b3b3]">{project.category}</p>
                   </div>
-                  
                   {/* Arrow button */}
                   <motion.div
-                    className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100"
+                    className={`absolute bottom-4 right-4 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
                     whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.2)' }}
                   >
                     <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
