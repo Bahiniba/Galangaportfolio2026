@@ -142,27 +142,27 @@ export default function ProjectDetail() {
         </motion.aside>
 
         {/* Main Content */}
-        <main className="flex-1 px-4 py-6 sm:px-6 sm:py-8 lg:px-12 lg:py-12 max-w-[1000px]">
+        <main className="flex-1 px-6 py-12 lg:px-12 lg:py-12 max-w-[1000px]">
           {/* Mobile header */}
-          <div className="lg:hidden flex items-center justify-between mb-6 sm:mb-8">
-            <div className="flex items-center gap-2 sm:gap-4 cursor-pointer" onClick={() => navigate('/')}>
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-[#bffffd]">
+          <div className="lg:hidden flex items-center justify-between mb-8">
+            <div className="flex items-center gap-4 cursor-pointer" onClick={() => navigate('/')}>
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-[#bffffd]">
                 <img src={imgProfile} alt="Avatar" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h1 className={`font-['Azeret_Mono'] text-base sm:text-xl tracking-[0.1em] ${
+                <h1 className={`font-['Azeret_Mono'] text-xl tracking-[0.1em] ${
                   theme === 'dark' ? 'text-white' : 'text-black'
                 }`}>
                   {t('home.title')}
                 </h1>
-                <p className="font-['Azeret_Mono'] text-[10px] sm:text-xs text-[#b3b3b3]">
+                <p className="font-['Azeret_Mono'] text-xs text-[#b3b3b3]">
                   {t('home.subtitle')}
                 </p>
               </div>
             </div>
 
             {/* Time/Date */}
-            <div className={`font-['Azeret_Mono'] text-xs hidden sm:block ${
+            <div className={`font-['Azeret_Mono'] text-xs ${
               theme === 'dark' ? 'text-white' : 'text-black'
             }`}>
               {formatTime(currentTime)} {formatDate(currentTime)}
@@ -173,12 +173,12 @@ export default function ProjectDetail() {
 
           {/* Project Title */}
           <motion.div
-            className="mb-6 sm:mb-8 text-center"
+            className="mb-8 text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className={`font-['Azeret_Mono'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 ${ 
+            <h3 className={`font-['Azeret_Mono'] text-4xl md:text-5xl mb-2 ${
               theme === 'dark' ? 'text-white' : 'text-black'
             }`}>
               {project.title} <span className="text-[#b3b3b3]">-</span> {project.subtitle}

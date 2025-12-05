@@ -6,7 +6,6 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Stack from './pages/Stack';
 import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -19,7 +18,6 @@ export default function App() {
             <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/stack" element={<Stack />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </LanguageProvider>

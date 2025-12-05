@@ -14,9 +14,9 @@ import imgEduConnectScreen from "figma:asset/0fb239c40eb9db610bd69ae549b27dce593
 
 // Project Images URLs
 const imgEsmcScreen =
-  "https://images.unsplash.com/photo-1734255620882-77378ba420bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwbWFya2V0JTIwY29tbWVyY2V8ZW58MXx8fHwxNzY0OTM4MjM2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+  "https://images.unsplash.com/photo-1762330466873-9a7dba6135b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW5hZ2VtZW50JTIwcGxhdGZvcm0lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY0ODkxMDkxfDA&ixlib=rb-4.1.0&q=80&w=1080";
 const imgErpScreen =
-  "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwxfHx8fDE3NjQ5MzQzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+  "https://images.unsplash.com/photo-1610689096391-801034c438fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbnRlcnByaXNlJTIwZXJwJTIwZGFzaGJvYXJkfGVufDF8fHx8MTY0ODkxMDkxfDA&ixlib=rb-4.1.0&q=80&w=1080";
 const imgSanitaryScreen =
   "https://images.unsplash.com/photo-1654762930571-dcf2ebc11542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3NwaXRhbCUyMG1hbmFnZW1lbnQlMjBzeXN0ZW18ZW58MXx8fHwxNzY0ODkxMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080";
 
