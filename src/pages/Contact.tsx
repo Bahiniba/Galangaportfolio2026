@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import Menu from '../components/Menu';
-import imgProfile from "figma:asset/71ed4c233544e578bf3f90b15239db5dacba5077.png";
+import imgProfile from "../assets/imgProfile.jpeg";
 
 export default function Contact() {
   const navigate = useNavigate();

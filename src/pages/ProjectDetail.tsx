@@ -5,7 +5,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import Menu from '../components/Menu';
 import { projects, projectsList } from '../data/projects';
-import imgProfile from "figma:asset/71ed4c233544e578bf3f90b15239db5dacba5077.png";
+import imgProfile from "../assets/imgProfile.jpeg";
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();

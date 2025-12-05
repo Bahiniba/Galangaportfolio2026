@@ -5,9 +5,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import Menu from '../components/Menu';
 import { projectsList } from '../data/projects';
-import imgProfile from "figma:asset/71ed4c233544e578bf3f90b15239db5dacba5077.png";
-import imgImage1 from "figma:asset/1dbe275bee644aace1d22428b3092bf6e74f77a2.png";
-import imgFramerScreenC7HjIv5NzbalKnGeCxH7AHzeE0Png1 from "figma:asset/f37646889dcdd3f524bac5e8614eda07a0f86c3f.png";
+import imgProfile from "../assets/imgProfile.jpeg";
 
 export default function Projects() {
   const navigate = useNavigate();

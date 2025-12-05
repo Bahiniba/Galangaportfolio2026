@@ -1,22 +1,13 @@
-import imgAvenzor from "figma:asset/e33195a80fd6bd33ab4ae3f418d65e36d5cb474d.png";
-import imgPlywood from "figma:asset/afb24e8572c9450898ecde0cfdc542d61bf80fe7.png";
-import imgHuggl10 from "figma:asset/70291f70eb21813fe3c3418cfc95f5981fc7002b.png";
-import imgCharmantFramerWebsite from "figma:asset/0b8d98fdd1221dd9ac93eae462b01d5c450b25bd.png";
-import imgPredictScreen from "figma:asset/45a277f356ceeb146fd30e72fabc987f82daa051.png";
-import imgHuggl20 from "figma:asset/2770a18cdff21d8764dab408ca2e7a555c140c61.png";
-import imgRentlyScreen from "figma:asset/62cc135783ac479861c83f00572b7529cf840530.png";
-import imgQuomiScreen from "figma:asset/c2318931eb407caf67cded54bb71972c78f5b76f.png";
-import imgKemetPodsScreen from "figma:asset/0a68e991884542bea6f13c3935ac358f8aee6587.png";
-import imgBahinibaScreen from "figma:asset/baea28db757a9cf60a5df9e5362df212fad648ef.png";
-import imgKelleleScreen from "figma:asset/19283a75418772727e8f314748ffdce2881a8d95.png";
-import imgMedicalRagScreen from "figma:asset/0c3add61a41d021835cb2d9362e41eb75a834e54.png";
-import imgEduConnectScreen from "figma:asset/0fb239c40eb9db610bd69ae549b27dce5937aef4.png";
+import imgKemetPodsScreen from "../assets/img_kemetpods.png";
+import imgBahinibaScreen from "../assets/img_bahiniba.png";
+import imgKelleleScreen from "../assets/img_kellele.png";
+import imgMedicalRagScreen from "../assets/img_medical_rag.png";
+import imgEduConnectScreen from "../assets/img_educonnect.png";
+import imgEsmcScreen from "../assets/img_esmc.png";
+import imgErpScreen from "../assets/25106209_7063226.jpg";
+import imgMahrigScreen from "../assets/img_mahrig.png";
 
 // Project Images URLs
-const imgEsmcScreen =
-  "https://images.unsplash.com/photo-1762330466873-9a7dba6135b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW5hZ2VtZW50JTIwcGxhdGZvcm0lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY0ODkxMDkxfDA&ixlib=rb-4.1.0&q=80&w=1080";
-const imgErpScreen =
-  "https://images.unsplash.com/photo-1610689096391-801034c438fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbnRlcnByaXNlJTIwZXJwJTIwZGFzaGJvYXJkfGVufDF8fHx8MTY0ODkxMDkxfDA&ixlib=rb-4.1.0&q=80&w=1080";
 const imgSanitaryScreen =
   "https://images.unsplash.com/photo-1654762930571-dcf2ebc11542?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3NwaXRhbCUyMG1hbmFnZW1lbnQlMjBzeXN0ZW18ZW58MXx8fHwxNzY0ODkxMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080";
 
@@ -198,6 +189,77 @@ export const projects: Record<string, Project> = {
       ],
     },
   },
+  mahrig: {
+  id: 'mahrig',
+  title: 'Mahrig – Digital Payment & Financial Hub',
+  subtitle: "Plateforme de paiement digitale (Pay-in / Pay-out / Wallet)",
+  category: 'FinTech – Application Web & Mobile',
+  client: 'Mahrig Technologies – Togo',
+  duration: 'En cours',
+  year: '2025',
+  mainImage: imgMahrigScreen, // À remplacer avec tes captures
+  images: [imgMahrigScreen, imgMahrigScreen, imgMahrigScreen],
+  website: 'https://mahrig.com',
+  description: {
+    en: "Mahrig is a digital payment hub designed to streamline financial transactions, connect mobile money operators, and provide a unified Pay-in / Pay-out system for businesses, developers, and digital platforms. It includes wallets, merchant accounts, API integrations, and automated reconciliation.",
+    fr: "Mahrig est une plateforme de paiement digitale conçue pour fluidifier les transactions financières, connecter les opérateurs Mobile Money et fournir un système unifié de Pay-in / Pay-out pour les entreprises, développeurs et plateformes digitales. Elle inclut des wallets, comptes marchands, intégrations API et une réconciliation automatisée.",
+  },
+
+  challenge: {
+    en: "Businesses across Africa struggle with fragmented payment infrastructures, inconsistent API integrations, manual reconciliation, and lack of a unified solution for mobile money, bank transfers, and wallet-based transactions.",
+    fr: "Les entreprises en Afrique rencontrent des difficultés liées à la fragmentation des infrastructures de paiement, des intégrations API inconsistantes, une réconciliation manuelle et l’absence d’une solution unifiée pour Mobile Money, transferts bancaires et transactions par wallet.",
+  },
+
+  solution: {
+    en: "Mahrig provides a secure, modular, and scalable payment ecosystem with merchant onboarding, mobile money APIs, wallet services, automated Pay-in / Pay-out flows, real-time reporting, and KYC/KYB compliance. The platform integrates a fully digital transaction hub and a developer-friendly API.",
+    fr: "Mahrig offre un écosystème de paiement sécurisé, modulaire et scalable avec onboarding marchand, APIs Mobile Money, services wallet, flux automatisés de Pay-in / Pay-out, reporting en temps réel et conformité KYC/KYB. La plateforme intègre un hub transactionnel digital et une API pensée pour les développeurs.",
+  },
+
+  results: {
+    en: "Mahrig is currently in development with a functional transaction engine, merchant onboarding module, wallet accounts, and Mobile Money connector architecture. The platform prepares the foundation for large-scale integration with banks, operators, and fintech partners.",
+    fr: "Mahrig est actuellement en développement avec un moteur transactionnel fonctionnel, un module d’onboarding marchand, des comptes wallet et une architecture de connecteurs Mobile Money. La plateforme prépare la base pour une intégration à grande échelle avec les banques, opérateurs et partenaires fintech.",
+  },
+
+  technologies: [
+    'Laravel',
+    'MySQL',
+    'Flutter (Mobile App)',
+    'Redis',
+    'Docker',
+    'Kafka (Event Streaming)',
+    'REST API',
+    'OAuth2 / JWT',
+    'Nginx',
+    'CI/CD – GitHub Actions'
+  ],
+
+  features: {
+    en: [
+      'Unified Pay-in & Pay-out engine',
+      'Wallet system (user & merchant accounts)',
+      'Mobile Money direct API integrations (Airtel, Moov, etc.)',
+      'KYC/KYB onboarding and identity verification',
+      'Real-time transaction tracking & reporting',
+      'Webhook notifications for developers',
+      'Automatic reconciliation engine',
+      'Access control & role management',
+      'Multi-currency support (configurable)',
+      'Dashboard for merchants and admins'
+    ],
+    fr: [
+      "Moteur unifié de Pay-in & Pay-out",
+      "Système de wallet (comptes utilisateurs & marchands)",
+      "Intégrations API Mobile Money directes (Airtel, Moov, etc.)",
+      "Onboarding KYC/KYB et vérification d'identité",
+      "Suivi et reporting des transactions en temps réel",
+      "Webhooks pour développeurs",
+      "Moteur de réconciliation automatique",
+      "Contrôle d’accès & gestion des rôles",
+      "Support multidevise (paramétrable)",
+      "Dashboard pour marchands et administrateurs"
+    ],
+  },
+},
   kellele: {
     id: "kellele",
     title: "Kellelé",

@@ -4,30 +4,29 @@ import { motion, AnimatePresence } from "motion/react";
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import Menu from "../components/Menu";
-import imgProfile from "figma:asset/71ed4c233544e578bf3f90b15239db5dacba5077.png";
-import imgAvatarPm9TtOkN341IYtePLdPGmhG0EPng from "figma:asset/5e1703e6ea203cc7ab1f22352424c36fae8df2ed.png";
-import imgAvatarLKaaStgbmdIe8TfrIkFlKzHazV0Png from "figma:asset/23ac6e3eec3898ef9e58f2d92a7ed196a8c8343e.png";
-import imgAvatarIkD34VgzaLm6N50MKdcR9HvBnkPng from "figma:asset/70d3c922397689cde8b40bd3ced656f2626f1128.png";
-import imgAvenzor from "figma:asset/e33195a80fd6bd33ab4ae3f418d65e36d5cb474d.png";
-import imgPlywood from "figma:asset/afb24e8572c9450898ecde0cfdc542d61bf80fe7.png";
-import imgHuggl10 from "figma:asset/70291f70eb21813fe3c3418cfc95f5981fc7002b.png";
-import imgImage1 from "figma:asset/1dbe275bee644aace1d22428b3092bf6e74f77a2.png";
-import imgFramerScreenC7HjIv5NzbalKnGeCxH7AHzeE0Png1 from "figma:asset/f37646889dcdd3f524bac5e8614eda07a0f86c3f.png";
-import imgFlutter from "figma:asset/989aa47122f2888ba48cf8b54d890115fa5485a2.png";
-import imgLaravel from "figma:asset/de4e6a69468ad20c82cd41a022a6b17caf4946f8.png";
-import imgAngular from "figma:asset/0167e29ae960dc2fe4676938fd6655d9af114a1d.png";
-import imgReact from "figma:asset/3ae1f504213859f3d64d82460466b8a67c61c6f1.png";
-import imgPython from "figma:asset/69b784fd22bca4ee6a7a61771af4126afea89757.png";
-import imgSpringBoot from "figma:asset/a513f271cee07b3106c6462a8e0adf17b2cb7184.png";
-import imgNodejs from "figma:asset/65658365932f5742675f3680cf912dfaa4176b0e.png";
-import imgMysql from "figma:asset/b601a1b673bd1f6d563f420c50c05632ea042cd7.png";
-import imgMongodb from "figma:asset/b347dcdd51a47279e608fce75f980687934a6248.png";
-import imgFirebase from "figma:asset/37fd3115db9f64990af9610232c831f9ffa6fd54.png";
-import imgGithub from "figma:asset/f3018b26b7e8d58d254f7494d360a2340fed8789.png";
-import imgJira from "figma:asset/07af9e6e62b716259b86b8615960bdc3375d7737.png";
-import imgPowerBI from "figma:asset/f0a51d0feec921f333bb41ceb7ad7580f1ef0981.png";
-import imgTensorFlow from "figma:asset/23372b0031b8a8f4ad7cbfb075608e627214bc98.png";
-
+import imgAvatarPm9TtOkN341IYtePLdPGmhG0EPng from "../assets/5e1703e6ea203cc7ab1f22352424c36fae8df2ed.png";
+import imgAvatarLKaaStgbmdIe8TfrIkFlKzHazV0Png from "../assets/23ac6e3eec3898ef9e58f2d92a7ed196a8c8343e.png";
+import imgAvatarIkD34VgzaLm6N50MKdcR9HvBnkPng from "../assets/70d3c922397689cde8b40bd3ced656f2626f1128.png";
+import imgAvenzor from "../assets/e33195a80fd6bd33ab4ae3f418d65e36d5cb474d.png";
+import imgPlywood from "../assets/afb24e8572c9450898ecde0cfdc542d61bf80fe7.png";
+import imgHuggl10 from "../assets/70291f70eb21813fe3c3418cfc95f5981fc7002b.png";
+import imgImage1 from "../assets/e33195a80fd6bd33ab4ae3f418d65e36d5cb474d.png";
+import imgFramerScreenC7HjIv5NzbalKnGeCxH7AHzeE0Png1 from "../assets/e33195a80fd6bd33ab4ae3f418d65e36d5cb474d.png";
+import imgProfile from "../assets/imgProfile.jpeg";
+import imgFlutter from "../assets/flutter.png";
+import imgLaravel from "../assets/laravel.png";
+import imgAngular from "../assets/angular.png";
+import imgReact from "../assets/reactLogo.png";
+import imgPython from "../assets/python.png";
+import imgSpringBoot from "../assets/spring.png";
+import imgNodejs from "../assets/nodeLogo.png";
+import imgMysql from "../assets/mysql.png";
+import imgMongodb from "../assets/mongodbLogo.png";
+import imgFirebase from "../assets/firebaseLogo.png";
+import imgGithub from "../assets/github.png";
+import imgJira from "../assets/jira.png";
+import imgTensorFlow from "../assets/tensor.png";
+import imgPowerBI from "../assets/powerbi.png";
 export default function Stack() {
   const navigate = useNavigate();
   const { theme } = useTheme();
@@ -261,27 +260,7 @@ export default function Stack() {
                 </motion.a>
               </div>
 
-              {/* Footer links */}
-              <div className="flex gap-4">
-                <span
-                  className={`font-['Azeret_Mono'] text-base text-[#b3b3b3] cursor-pointer transition-colors ${
-                    theme === "dark"
-                      ? "hover:text-white"
-                      : "hover:text-black"
-                  }`}
-                >
-                  Licensing
-                </span>
-                <span
-                  className={`font-['Azeret_Mono'] text-base text-[#b3b3b3] cursor-pointer transition-colors ${
-                    theme === "dark"
-                      ? "hover:text-white"
-                      : "hover:text-black"
-                  }`}
-                >
-                  404
-                </span>
-              </div>
+            
             </div>
           </div>
         </motion.aside>
@@ -574,89 +553,6 @@ export default function Stack() {
               </div>
             </motion.div>
 
-            {/* Contact Card */}
-            <motion.div
-              className="relative bg-[#ff8c00] rounded-3xl p-6 aspect-square flex flex-col justify-between overflow-hidden group cursor-pointer"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              whileHover={{ scale: 1.02 }}
-              onClick={() => navigate("/contact")}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img
-                  src={imgImage1}
-                  alt="Contact sphere"
-                  className="w-full h-full object-contain opacity-80"
-                />
-              </div>
-
-              <h3 className="font-['Azeret_Mono'] text-2xl text-black relative z-10">
-                Contact
-              </h3>
-
-              <motion.div
-                className="self-end w-12 h-12 rounded-full bg-black/10 backdrop-blur-sm flex items-center justify-center relative z-10"
-                whileHover={{
-                  scale: 1.1,
-                  backgroundColor: "rgba(0,0,0,0.2)",
-                }}
-              >
-                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 12 12"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 11L11 1M11 1H1M11 1V11"
-                      stroke="white"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </div>
-              </motion.div>
-            </motion.div>
-
-            {/* Master Framer Card */}
-            <motion.div
-              className={`relative rounded-3xl overflow-hidden aspect-[4/3] group cursor-pointer ${
-                theme === "dark"
-                  ? "bg-[#1a1a1a]"
-                  : "bg-white border border-black/10"
-              }`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <img
-                src={
-                  imgFramerScreenC7HjIv5NzbalKnGeCxH7AHzeE0Png1
-                }
-                alt="Master Framer"
-                className="w-full h-full object-cover"
-              />
-              <div
-                className={`absolute inset-0 ${
-                  theme === "dark"
-                    ? "bg-gradient-to-t from-black/90 via-transparent to-transparent"
-                    : "bg-gradient-to-t from-white/90 via-transparent to-transparent"
-                }`}
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h3
-                  className={`font-['Azeret_Mono'] text-2xl ${
-                    theme === "dark"
-                      ? "text-white"
-                      : "text-black"
-                  }`}
-                >
-                  Master Framer
-                </h3>
-              </div>
-            </motion.div>
           </div>
         </aside>
       </div>
