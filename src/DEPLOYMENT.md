@@ -12,12 +12,37 @@ Votre portfolio est **100% prêt pour le déploiement** ! Tous les éléments so
 - ✅ Page 404 personnalisée
 - ✅ Animations Motion complètes
 - ✅ Navigation React Router
+- ✅ **Système de fallback pour images en production**
+
+---
+
+## ⚠️ IMPORTANT - Images en Production
+
+Les imports `figma:asset` ne fonctionnent qu'en développement. Le système utilise maintenant :
+- ✅ **Images de fallback automatiques** (logos CDN, photos Unsplash)
+- ✅ **Composant Image intelligent** avec gestion d'erreurs
+- ✅ **Mapping configurable** dans `/utils/assetHelper.ts`
+
+**📖 Consultez `/FIX-IMAGES-PRODUCTION.md` pour remplacer par vos vraies images**
 
 ---
 
 ## 📋 Checklist Pré-Déploiement
 
-### 1. Métadonnées SEO à Personnaliser
+### 1. Images (CRITIQUE)
+
+**Le site fonctionne avec des images temporaires, mais vous devriez :**
+- [ ] Lire `/FIX-IMAGES-PRODUCTION.md`
+- [ ] Uploader votre vraie photo de profil
+- [ ] Uploader vos screenshots de projets
+- [ ] Modifier `/utils/assetHelper.ts` avec vos URLs
+
+**Options pour héberger vos images :**
+- **Cloudinary** (gratuit) : [cloudinary.com](https://cloudinary.com)
+- **ImgBB** (gratuit, simple) : [imgbb.com](https://imgbb.com)
+- **Dossier `/public/images/`** (dans le projet)
+
+### 2. Métadonnées SEO à Personnaliser
 
 Dans `/components/SEO.tsx`, remplacez ces valeurs par votre domaine final :
 
@@ -26,7 +51,7 @@ image = 'https://your-domain.com/og-image.jpg'  // ⚠️ À REMPLACER
 url = 'https://your-domain.com'                 // ⚠️ À REMPLACER
 ```
 
-### 2. Image Open Graph (Optionnel mais Recommandé)
+### 3. Image Open Graph (Optionnel mais Recommandé)
 
 Créez une image **1200x630px** pour les partages sur réseaux sociaux :
 - Nom suggéré : `og-image.jpg`
